@@ -3,6 +3,7 @@ const inquirer = require("inquirer");
 const mysql = require("mysql");
 const sequilize = require("./config/connection");
 const cTable = require("console.table");
+const db = require("./models"); 
 
 //connect to the port
 // const connection = mysql.createConnection({

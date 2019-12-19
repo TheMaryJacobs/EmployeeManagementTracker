@@ -1,3 +1,6 @@
+//DONT TOUCH THIS FILE - SET UP VIA NPX SEQUELIZE INIT
+// trust 
+
 'use strict';
 
 const fs = require('fs');
@@ -7,6 +10,9 @@ const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
+
+//DONT TOUCH THIS FILE - SET UP VIA NPX SEQUELIZE INIT
+// trust 
 
 let sequelize;
 if (config.use_env_variable) {
@@ -35,3 +41,6 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = db;
+
+//DONT TOUCH THIS FILE - SET UP VIA NPX SEQUELIZE INIT
+// trust 
