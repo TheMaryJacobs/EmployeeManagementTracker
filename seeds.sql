@@ -1,4 +1,4 @@
-USE employeeDB;
+USE cms_DB;
 
 INSERT INTO department (name)
 VALUES ("Human Resources"), ("R&D"), ("Engineering"), ("Marketing"), ("Sales");

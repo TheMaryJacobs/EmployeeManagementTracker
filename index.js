@@ -1,25 +1,26 @@
 //list dependencies 
-const inquirer = require("inquirer")
-const mysql = require("mysql")
-const cTable = require("console.table")
+const inquirer = require("inquirer");
+const mysql = require("mysql");
+const sequilize = require("./config/connection");
+const cTable = require("console.table");
 
 //connect to the port
-const connection = mysql.createConnection({
-    host: "localhost",
+// const connection = mysql.createConnection({
+//     host: "localhost",
 
-    // Your port; if not 3306
-    port: 3306,
+//     // Your port; if not 3306
+//     port: 3306,
 
-    // Your username
-    user: "root",
+//     // Your username
+//     user: "root",
 
-    // Your password
-    password: "root",
-    database: "cms_DB"
-});
+//     // Your password
+//     password: "root",
+//     database: "cms_DB"
+// });
 
 //connect server
-connection.connect(function (err) {
+sequilize.connect(function (err) {
     if (err) throw err;
     console.log("connected as id " + connection.threadId);
     console.log(table);
