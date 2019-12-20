@@ -1,46 +1,34 @@
-//list dependencies 
+// //list dependencies 
 const inquirer = require("inquirer");
-const mysql = require("mysql");
+// const mysql = require("mysql");
 const sequilize = require("./config/connection");
 const cTable = require("console.table");
 const db = require("./models"); 
 
-//connect to the port
-// const connection = mysql.createConnection({
-//     host: "localhost",
+// const Roles = require ("./models/roles")
+// const Departments = require ("./models/departments")
+// const Employees = require ("./models/employees")
 
-//     // Your port; if not 3306
-//     port: 3306,
-
-//     // Your username
-//     user: "root",
-
-//     // Your password
-//     password: "root",
-//     database: "cms_DB"
-// });
-
-//connect server
-sequilize.connect(function (err) {
-    if (err) throw err;
-    console.log("connected as id " + connection.threadId);
-    console.log(table);
-    menu()
-    //  connection.end();
-});
-
+// console.table ();
 
 //create functions for prompts - copied from TwoTables activity
 function menu() {
     inquirer.prompt({
         type: "list",
-        choices: ["View departments", "View roles", "View employees",  "Add department", "Add role", "Add employee", "Update employee role", "Quit"],
+        choices: [
+            "View departments",
+            "View roles",
+            "View employees",
+            "Add department",
+            "Add role",
+            "Add employee",
+            "Update employee role",
+            "Quit"],
         message: "What would you like to do?",
         name: "option"
     })
         .then(function (result) {
             console.log("You entered: " + result.option)
-
             switch (result.option) {
                 case "View departments":
                     viewDepartment();
@@ -65,7 +53,6 @@ function menu() {
                     break;
                 default :
                      quit();
-
             }
         });
 }
