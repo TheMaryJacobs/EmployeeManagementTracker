@@ -3,7 +3,7 @@ Design and build a solution for managing a company's employees using node, inqui
 
 # Watch It In Action
 ![Images](https://media.giphy.com/media/3oEjI80DSa1grNPTDq/giphy.gif)
-![Images](https://media.giphy.com/media/b2GZmLzEvgcFO/giphy.gif)
+![Images](https://media.giphy.com/media/3RnOsgr0ShDEs/giphy.gif)
 ![Images](https://media.giphy.com/media/LRKET0Syb0rDO/giphy.gif)
 
 ## Challenges 
